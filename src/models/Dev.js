@@ -1,7 +1,5 @@
-// MVC = Model, View, Controller.
 const { Schema, model } = require("mongoose");
 
-// Model = Estrutura da tabela do banco de dados para armezenar um desenvolverdor la dentro.
 const DevSchema = new Schema(
   {
     name: {
@@ -32,9 +30,7 @@ const DevSchema = new Schema(
   },
   {
     timestamps: true
-    // createdAt, updatedAt
   }
 );
 
-// first params = Dev (name of the model), second one = Schema.
 module.exports = model("Dev", DevSchema);
